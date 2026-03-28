@@ -1,0 +1,51 @@
+# VBA-Base Module Registry
+# Master catalog for reusable VBA modules
+# ---
+# id:          Unique module identifier
+# name:        Module name (matches .bas/.cls filename without extension)
+# type:        bas | cls
+# layer:       common | data | io
+# version:     Semantic version
+# description: Module purpose
+# used_by:     Projects currently consuming this module
+
+modules:
+  - id: UTL-001
+    name: Utl_File
+    type: bas
+    layer: common
+    version: 1.0.0
+    description: File operations using FileSystemObject
+    used_by: [DocumentBase, TimeBase]
+
+  - id: UTL-002
+    name: Utl_Logger
+    type: bas
+    layer: common
+    version: 1.0.0
+    description: Logging to Immediate Window
+    used_by: [DocumentBase, TimeBase]
+
+  - id: UTL-003
+    name: Utl_Sheet
+    type: bas
+    layer: common
+    version: 1.0.0
+    description: Sheet operations (filter, sort, copy)
+    used_by: [DocumentBase, TimeBase]
+
+  - id: UTL-004
+    name: Utl_Table
+    type: bas
+    layer: common
+    version: 1.0.0
+    description: Table operations (Tbl marker search, read/write)
+    used_by: [DocumentBase, TimeBase]
+
+  - id: UTL-005
+    name: Utl_Yaml
+    type: bas
+    layer: common
+    version: 1.0.0
+    description: Minimal YAML serializer/parser for DataIO
+    used_by: [DocumentBase, TimeBase]
