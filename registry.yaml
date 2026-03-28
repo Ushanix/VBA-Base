@@ -49,3 +49,11 @@ modules:
     version: 1.0.0
     description: Minimal YAML serializer/parser for DataIO
     used_by: [DocumentBase, TimeBase]
+
+  - id: ENT-001
+    name: Ent_Import
+    type: bas
+    layer: common
+    version: 1.1.0
+    description: Bulk import bas/cls/frm modules with auto-rename fallback
+    used_by: [DocumentBase, TimeBase]

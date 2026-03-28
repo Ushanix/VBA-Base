@@ -1,3 +1,4 @@
+Attribute VB_Name = "Utl_File"
 Option Explicit
 
 ' ============================================
